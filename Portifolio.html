@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+BODY {
+    background-color: #DBBD9E;
+}
+
+h1 {color: rosybrown;}
+
+#texto {                 # É USADO PRA PUXAR ID
+    color: red;
+}
+
+</style>
+
+    <h1 id = "texto">Olá Mundo</h1>
+    <h1> Eu sou Luiz</h1>
+    <h5> Eu souu </h5>
+
+    <p> 
+        Essa é uma descrição sobre mim, Lorem ipsum dolor 
+        sit amet consectetur adipisicing elit. Debitis, necessitatibus perferendis. Assumenda eveniet quaerat alia<br>
+        s quod repellat voluptate, quo nesciunt. Dolore inventore, veniam saepe eaque iusto ipsa necessi
+        tatibus temporibus non!
+
+    </p>
+
+    <script>
+        const texto = document.getElementById("texto");
+    
+        function mudar() {
+            if (texto.style.color === "red") {
+                texto.style.color = "blue";
+            } else {
+                texto.style.color = "red";
+            }
+        }
+    
+        texto.addEventListener("click", mudar);
+    </script>
+    
+</body>
+</html>
